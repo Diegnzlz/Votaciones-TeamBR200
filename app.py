@@ -39,15 +39,17 @@ conn = init_db()
 # --- DATOS CANDIDATOS --- (Se mantiene igual)
 candidatos = {
     "Presidente": ["Alex", "Diego"],
-    "Vice-presidente": ["Emilio"],
+    "Vice-presidente": ["Emilio", "Mayckool"],
     "Tesorera": ["Fabiola", "Leonardo"],
     "Ayudante de tesorería": ["Daniel Kavak", "Luis comisión", "Luis Ángel", "Anthony el capi"],
     "Secretaría": ["Alondra"],
     "Sargento de armas principal": ["Daniel Danher"],
-    "Sargento de adiestramiento": ["Randhy", "Victor"],
-    "Moderador": ["Jhonatan"],
+    "Sargento de adiestramiento": ["Randhy", "Jhonatan"],
+    "Moderador": ["Jhonatan", "Henyelit"],
     "Capitán de ruta": ["Kleiber"],
-    "Centinelas": ["Christhian/Daniel"]
+    "Centinelas": ["Christhian/Daniel", "Víctor","Bryan/Anthony"],
+    "Publicidad y Mercadeo": ["Gaby", "Ruben Ponquepan"],
+    "Labores Sociales": ["Leonela"]
 }
 
 menu = st.sidebar.radio("Navegación", ["Votación", "Resultados 📊", "Admin 🔑"])
@@ -136,4 +138,5 @@ elif menu == "Admin 🔑":
             st.warning(
                 "⚠️ Se detectaron diferentes nombres usando la misma IP:")
             st.write(duplicados)
+
 
