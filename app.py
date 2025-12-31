@@ -136,3 +136,4 @@ elif menu == "Admin 🔑":
             st.warning(
                 "⚠️ Se detectaron diferentes nombres usando la misma IP:")
             st.write(duplicados)
+
